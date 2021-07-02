@@ -1,0 +1,68 @@
+@import "converter.scss";
+.navigation {
+  padding: to-rem(50 0 20 0);
+  .mobileNav {
+    padding: to-rem(0 20 0 20);
+    display: flex;
+    justify-content: space-between;
+  }
+  .desktopNavigation {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .navigation {
+    padding: to-rem(50 140 20 140);
+    .mobileNav {
+      display: none;
+    }
+    .desktopNavigation {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: to-rem(50);
+      .left {
+        width: 90%;
+        display: flex;
+        ul {
+          display: flex;
+          padding: 0;
+          list-style: none;
+          margin: to-rem(0 0 0 50);
+          li {
+              margin: 0;
+              padding: to-rem(6 10);
+            color: hsl(0, 0%, 75%);
+            &:hover{
+                color: #000000;
+            }
+          }
+        }
+      }
+      .buttons{
+          font-size: to-rem(18);
+          display: flex;
+          .loginButton, .signUpButton{
+              border: 0; 
+              color: hsl(0, 0%, 75%);
+              background-color: #ffff;
+          }
+          .signUpButton{
+              background-color: hsl(180, 66%, 49%);
+              color: #ffff;
+              border: none;
+              padding: to-rem(10);
+              border-radius: to-rem(20);
+              margin-left: to-rem(10);
+              width: to-rem(90);
+          }
+      }
+    }
+  }
+} ;
+
+@media only screen and (min-width: 768px) {
+      .navigation {
+    padding: to-rem(50 240 20 240);
+      }
+}

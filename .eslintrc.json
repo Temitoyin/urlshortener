@@ -1,0 +1,131 @@
+{
+    "env": {
+    "browser": true,
+    "es6": true
+},
+"extends": ["eslint:recommended",  "plugin:react/recommended"],
+"plugins": ["react"],
+"parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+},
+"parser": "babel-eslint",
+"rules": {
+    "camelcase": [
+        0,
+        {
+            "properties": "always"
+        }
+    ],
+    "semi": 2,
+    "eqeqeq": 2,
+    "indent": [
+        2,
+        4,
+        {
+            "SwitchCase": 1
+        }
+    ],
+    "no-use-before-define": [
+        2,
+        {
+            "functions": false
+        }
+    ],
+    "no-console": "warn",
+    "max-len": [
+        2,
+        {
+            "code": 120,
+            "ignoreComments": true
+        }
+    ],
+    "quotes": [
+        2,
+        "single"
+    ],
+    "strict": [
+        0,
+        "global"
+    ],
+    "no-undef": 2,
+    "no-unused-vars": 2,
+    "no-eq-null": 2,
+    "comma-dangle": [
+        "error",
+        "only-multiline"
+    ],
+    "space-before-function-paren": [
+        2,
+        {
+            "anonymous": "ignore",
+            "named": "never"
+        }
+    ],
+    "new-cap": "off",
+    "prefer-const": "error",
+    "no-multi-spaces": [
+        "error"
+    ],
+    "no-multiple-empty-lines": [
+        "error",
+        {
+            "max": 1,
+            "maxBOF": 1
+        }
+    ],
+    "no-param-reassign": "warn",
+    "no-useless-constructor": "error",
+    "react/jsx-first-prop-new-line": "error",
+    "react/jsx-closing-bracket-location": "error",
+    "react/jsx-sort-props": [
+        "error",
+        {
+            "ignoreCase": true
+        }
+    ],
+    "react/jsx-max-props-per-line": [
+        1,
+        {
+            "maximum": 1,
+            "when": "always"
+        }
+    ],
+    "react/require-default-props": [
+        2,
+        {
+            "forbidDefaultForRequired": true
+        }
+    ],
+    "react/prop-types": [
+        1,
+        {
+            "ignore": [
+                "children"
+            ]
+        }
+    ],
+    "react/jsx-indent": [
+        2,
+        4
+    ],
+    "react/self-closing-comp": "error",
+    "react/no-unused-state": "error",
+    "react/no-unused-prop-types": "warn",
+    "react/no-deprecated": "warn",
+    "react/display-name": "warn",
+    "react/jsx-equals-spacing": [
+        "error",
+        "never"
+    ],
+    "react/jsx-tag-spacing": [
+        "error",
+        {
+            "afterOpening": "never",
+            "closingSlash": "never",
+            "beforeClosing": "never",
+            "beforeSelfClosing": "always"
+        }
+    ]
+}
+}

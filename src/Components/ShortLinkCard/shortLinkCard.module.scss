@@ -1,0 +1,65 @@
+
+@import "converter.scss";
+.shortLinkCard {
+  background-color: #fff;
+  border-radius: to-rem(8);
+  justify-content: space-between;
+  margin-bottom: to-rem(10);
+  padding: to-rem(15 0);
+  .topLink {
+      padding: to-rem(0 15);
+    border-bottom: to-rem(1) solid hsl(0, 0%, 75%);
+    text-overflow: ellipsis;
+    .link {
+        padding: to-rem(10 0);
+      color: #000000;
+      font-size: to-rem(18);
+    }
+  }
+
+  .right {
+      padding: to-rem(0 15);
+    p {
+      padding: to-rem(10 0);
+      font-size: to-rem(18);
+      color: hsl(180, 66%, 49%);
+    }
+    button {
+      padding: to-rem(10);
+      color: #ffff;
+      border: 0;
+      border-radius: to-rem(8);
+      background-color: hsl(180, 66%, 49%);
+      font-size: to-rem(18);
+      font-weight: 700;
+      width: 100%;
+    }
+  }
+}
+.copied{
+    background-color:  hsl(257, 27%, 26%) !important;
+}
+
+
+@media only screen and (min-width: 768px) {
+  .shortLinkCard{
+      display: flex;
+  } .topLink {
+    border-bottom: 0 !important;
+    // .link {
+    //     padding: to-rem(10 0);
+    //   color: #000000;
+    //   font-size: to-rem(18);
+    // }
+  }
+  .right{
+      display: flex;
+    //   grid-template-columns: 1fr 1fr;
+      button {
+          width: to-rem(130) !important;
+      margin-right: to-rem(20) !important;
+      margin-left: to-rem(20) !important;
+    }
+  }
+
+};

@@ -1,0 +1,11 @@
+@import "converter.scss";
+.button{
+    width: to-rem(180);
+    height: to-rem(45);
+    border: none;
+    border-radius: to-rem(20);
+    background-color: hsl(180, 66%, 49%);
+    font-size: to-rem(16);
+    font-weight: 700;
+    color: white;
+}

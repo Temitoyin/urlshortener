@@ -1,0 +1,191 @@
+@import "converter.scss";
+* {
+  box-sizing: border-box;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    margin: 0;
+    padding: 0;
+  }
+}
+.app {
+  &_header {
+    padding: to-rem(0 20 120 20);
+    text-align: center;
+    .img {
+      width: 100%;
+      img {
+        width: 100%;
+      }
+    }
+    h1 {
+      font-size: to-rem(40);
+      font-weight: 700;
+    }
+    p {
+      color: hsl(0, 0%, 75%);
+      font-size: to-rem(18);
+      line-height: 1.4;
+      padding: to-rem(20 0);
+    }
+  }
+  &_linkInput {
+    position: relative;
+    padding: to-rem(0 20);
+  }
+  .shortLinksWrapper {
+    // padding-top:to-rem(50);
+    // position: absolute;
+    width: 100%;
+  }
+  &_advanced {
+    padding: to-rem(120 20 50 20);
+    background-color: rgb(238, 241, 246);
+    .headingText {
+      text-align: center;
+      h2 {
+        font-size: to-rem(35);
+        font-weight: 700;
+        padding: to-rem(20 0);
+      }
+      p {
+        padding: to-rem(10 0);
+        font-size: to-rem(18);
+      }
+    }
+    .infoList {
+      padding-top: to-rem(50);
+      .rule {
+        width: to-rem(10);
+        height: to-rem(70);
+        transform: rotate(90);
+        background-color: hsl(180, 66%, 49%);
+        margin: 0 auto;
+      }
+      > div:nth-child(6) {
+        display: none;
+      }
+    }
+  }
+  &_boostLink {
+    padding: to-rem(70 0);
+    text-align: center;
+    height: to-rem(270);
+    color: white;
+    background-color: hsl(257, 27%, 26%);
+    background-image: url("./images/bg-boost-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+    h3 {
+      font-size: to-rem(25);
+      font-weight: 700;
+      padding: to-rem(10 0);
+    }
+  }
+}
+button{
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+  .app {
+    &_header {
+      display: flex;
+      text-align: start;
+      flex-direction: row-reverse;
+      padding: to-rem(0 0 150 150);
+    }
+    .img {
+      width: 50%;
+    }
+    .headerBottom {
+      margin: to-rem(50 0 0 0);
+      h1 {
+        font-size: to-rem(80);
+      }
+      p {
+        width: tor;
+      }
+    }
+    &_linkInput {
+      display: flex;
+      justify-content: center;
+    }
+    &_advanced {
+      padding: to-rem(120 140 90 140);
+      .headingText {
+        text-align: center;
+        p {
+          margin: 0 auto;
+          color: hsl(0, 0%, 75%);
+          width: 35%;
+        }
+      }
+      .infoList {
+        display: flex;
+        > div:nth-child(3) {
+          margin-top: to-rem(50);
+        }
+        > div:nth-child(5) {
+          margin-top: to-rem(100);
+        }
+        .rule {
+          width: to-rem(10);
+          height: to-rem(300);
+          transform: rotate(90deg);
+          background-color: hsl(180, 66%, 49%);
+          margin: 0 auto;
+          z-index: 0;
+        }
+      }
+    }
+    &_boostLink {
+      background-image: url("./images/bg-boost-desktop.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding-top: to-rem(50);
+      h3 {
+        font-size: to-rem(40);
+        margin-bottom: to-rem(20);
+      }
+    }
+  }
+}
+
+
+
+@media only screen and (min-width: 1441px) {
+ .app {
+    &_header {
+      display: flex;
+      text-align: start;
+      flex-direction: row-reverse;
+      padding: to-rem(0 0 150 250);
+    }
+    .img {
+      width: 50%;
+    }
+    .headerBottom {
+      margin: to-rem(50 0 0 0);
+      h1 {
+        font-size: to-rem(80);
+      }
+      p {
+        width: tor;
+      }
+    }
+    &_linkInput {
+      display: flex;
+      justify-content: center;
+    }
+    &_advanced {
+      padding: to-rem(120 240 90 240);
+    }
+
+  }
+  
+}

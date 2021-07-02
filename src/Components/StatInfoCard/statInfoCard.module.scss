@@ -1,0 +1,57 @@
+@import 'converter.scss';
+
+.infoCard{
+    position: relative;
+    background-color: #ffff;
+    height: to-rem(270);
+    padding: to-rem(40 10 20 10);
+    text-align: center;
+    border-radius: to-rem(8);
+    h1{
+        font-size: to-rem(40 0 20 0);
+        font-weight: 700;
+        padding: to-rem(20 0);
+    }p{
+        font-size: to-rem(14);
+        color: hsl(0, 0%, 75%);
+        font-size: to-rem(18);
+        line-height: 1.8;
+    }
+    .iconContainer{
+        .iconWrapper {
+            position: absolute;
+            top: 0;
+            width: to-rem(70);
+             left: 50%;
+             transform: translate(-50%, - 50%);
+            height: to-rem(70);
+            border-radius: 50%;
+            background-color: hsl(257, 27%, 26%);
+            margin: to-rem(0) auto to-rem(10) auto;
+              > svg {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, - 50%);
+                z-index: 1;
+            }
+        }
+    }
+     
+
+}
+@media only screen and (min-width: 768px) {
+.infoCard{
+    width: to-rem(350);
+    z-index: 1;
+    .iconWrapper{
+        left: 20% !important;
+    }
+}
+}
+@media only screen and (min-width: 1441px) {
+.infoCard{
+    width: to-rem(400);
+}
+
+}

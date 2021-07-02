@@ -1,0 +1,71 @@
+@import "converter.scss";
+.linkInputWrapper {
+  background-image: url("../../images/bg-shorten-mobile.svg");
+//   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right top;
+  position: absolute;
+  top: to-rem(-180);
+  left: 0;
+  width: 100%;
+  padding: to-rem(15);
+  border: 1px solid black;
+  background-color: hsl(257, 27%, 26%);
+  border-radius: to-rem(8);
+  input,
+  button {
+    width: 100%;
+    height: to-rem(40);
+  }
+  input {
+    margin-bottom: to-rem(15);
+    border-radius: to-rem(8);
+    border: 0;
+    outline: none;
+  }
+  input::placeholder {
+    padding-left: to-rem(20);
+  }
+  button {
+    background-color: hsl(180, 66%, 49%);
+    border-radius: to-rem(8);
+    border: 0;
+    font-size: to-rem(18);
+    font-weight: 700;
+    color: #ffff;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .linkInputWrapper {
+    position: absolute;
+    padding: to-rem(35) !important;
+    background-image: url("../../images/bg-shorten-desktop.svg");
+    background-size: cover;
+    top: to-rem(-180);
+    width: 100%;
+    padding: to-rem(15);
+    border: 1px solid black;
+    background-color: hsl(257, 27%, 26%);
+    border-radius: to-rem(8);
+    form {
+      display: flex;
+    }
+    .inputWrapper {
+      width: 100%;
+      margin-right: to-rem(20);
+    }
+    input,
+    button {
+      width: 100%;
+      height: to-rem(50);
+    }
+    input {
+      width: 100%;
+      margin-bottom: 0;
+    }
+    button {
+      width: to-rem(180);
+    }
+  }
+}
