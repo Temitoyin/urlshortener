@@ -6,12 +6,13 @@ const Navigation = () => {
     return (
         <div className={styles.navigation}>
             <div className={styles.mobileNav}>
-                <img src={Logo} />
+                <img src={Logo}  alt="logo"/>
                 <Icon name="menu" />
             </div>
             <div className={styles.desktopNavigation}>
                 <div className={styles.left}>
                     <img
+                        alt="logo"
                         className={styles.logo}
                         src={Logo}
                     />

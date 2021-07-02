@@ -38,7 +38,7 @@ function App() {
             <Navigation />
             <section className={styles.app_header}>
                 <div className={styles.img}>
-                    <img src={HeaderImg} />
+                    <img src={HeaderImg} alt="lady working on a computer" />
                 </div>
                 <div className={styles.headerBottom}>
                     <h1>More than just shorter links</h1>
